@@ -1,0 +1,23 @@
+{
+  "name": "simple-mask",
+  "version": "0.0.1",
+  "homepage": "https://github.com/billysbilling/simple-mask",
+  "main": "src/js/index.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "billy-builder": {
+    "include": [
+      "src/js",
+      "src/css"
+    ]
+  },
+  "dependencies": {
+    "jquery": "*"
+  }
+}
