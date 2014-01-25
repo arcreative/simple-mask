@@ -14,10 +14,10 @@ function doMask(el, delay) {
         return;
     }
     el.isMasked = true;
-    var mask = $('.simple-mask', el);
+    var mask = $('.batmask', el);
     if (mask.length === 0) {
-        $(el).append('<div class="simple-mask"></div>');
-        mask = $('.simple-mask', el);
+        $(el).append('<div class="batmask"></div>');
+        mask = $('.batmask', el);
         if (delay) {
             mask.css('opacity', 0);
             el.maskTimeout = setTimeout(function() {
@@ -41,7 +41,7 @@ function doUnmask(el) {
     el.isMasked = false;
     clearTimeout(el.maskTimeout);
     delete el.maskTimeout;
-    var mask = $('.simple-mask', el);
+    var mask = $('.batmask', el);
     if (mask.length > 0) {
 //        mask.stop(false);
         mask.animate({
