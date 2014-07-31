@@ -18,6 +18,7 @@
     ]
   },
   "dependencies": {
-    "jquery": "*"
+    "jquery": "*",
+    "highest-z-index": "billysbilling/highest-z-index#>=0.1.0"
   }
 }
