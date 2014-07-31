@@ -1,5 +1,7 @@
 require('jquery');
 
+var highestZIndex = require('highest-z-index')
+
 module.exports = {
     defaultDelay: 1000,
     rootElement: 'body',
@@ -18,6 +20,7 @@ function doMask(el, delay) {
     if (mask.length === 0) {
         $(el).append('<div class="batmask"></div>');
         mask = $('.batmask', el);
+        mask.css('z-index', highestZIndex() + 1);
         if (delay) {
             mask.css('opacity', 0);
             el.maskTimeout = setTimeout(function() {
